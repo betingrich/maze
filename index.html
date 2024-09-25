@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Maze Game</title>
+</head>
+<body>
+    <h1>Maze Game</h1>
+    
+    <div id="signup-form">
+        <h2>Signup</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="date" id="dob" required>
+        <button id="signup-button">Sign Up</button>
+    </div>
+    
+    <div id="info">
+        <div id="game-name">Maze Runner</div>
+        <div id="points">Points: 0</div>
+        <div id="coins">Coins: 0</div> <!-- Coins Display -->
+        <div id="timer">Time: 60</div>
+    </div>
+
+    <div id="controls">
+        <button id="move-up">↑</button>
+        <button id="move-down">↓</button>
+        <button id="move-left">←</button>
+        <button id="move-right">→</button>
+        <button id="toggle-controls">Toggle Controls</button>
+    </div>
+
+    <div id="shop">
+        <h2>Shop</h2>
+        <button id="buy-jump-boots">Jump Boots (5 coins)</button>
+        <button id="buy-jetpack">Jetpack (10 coins)</button>
+    </div>
+
+    <div id="game-container">
+        <div id="player"></div>
+        <div class="coin" style="top: 100px; left: 100px;"></div> <!-- Coin location -->
+        <div class="coin" style="top: 300px; left: 200px;"></div> <!-- Another coin -->
+        <!-- More coins can be added here -->
+    </div>
+
+    <footer>
+        <p>Copyright ©️ Marisel 2024</p>
+    </footer>
+
+    <div id="congratulations" class="hidden">Congratulations <span id="congrat-username"></span>! You completed this level!</div>
+    <script src="script.js"></script>
+</body>
+</html>
